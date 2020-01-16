@@ -14,14 +14,14 @@ RUN apt-get update && apt-get install -y \
 # Install latest php
 RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php \
     && apt-get update \
-    && apt-get install -y php7.3 \
-    php7.3-xml \
-    php7.3-gd \
-    php7.3-pgsql \
-    php7.3-mbstring \
-    php7.3-redis \
-    php7.3-curl \
-    php7.3-zip \
+    && apt-get install -y php7.4 \
+    php7.4-xml \
+    php7.4-gd \
+    php7.4-pgsql \
+    php7.4-mbstring \
+    php7.4-redis \
+    php7.4-curl \
+    php7.4-zip \
     && curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
 
